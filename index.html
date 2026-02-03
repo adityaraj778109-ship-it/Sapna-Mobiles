@@ -1,1 +1,201 @@
-<!DOCTYPE html> <html> <head> <title>Sapna Mobiles | Second Hand Phones</title> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <style> *{ margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; } body{ background:#f2f3f5; } /* NAVBAR */ nav{ background:#0d47a1; color:white; padding:14px; display:flex; justify-content:space-between; font-weight:bold; } /* HERO */ .hero{ background:linear-gradient(45deg,#1976d2,#42a5f5); color:white; text-align:center; padding:40px 15px; } .hero h1{ font-size:24px; } /* SECTION */ .section-title{ font-size:20px; padding:15px; font-weight:bold; } /* BRANDS */ .brands{ display:grid; grid-template-columns:repeat(auto-fit,minmax(80px,1fr)); gap:10px; padding:10px 15px; } .brand{ background:white; padding:10px; border-radius:10px; text-align:center; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,0.1); } /* PRODUCTS */ .products{ display:grid; gri...
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sapna Mobiles | Second Hand Phones</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+
+body{
+  background:#f2f3f5;
+}
+
+/* NAVBAR */
+nav{
+  background:#0d47a1;
+  color:white;
+  padding:14px;
+  display:flex;
+  justify-content:space-between;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(45deg,#1976d2,#42a5f5);
+  color:white;
+  text-align:center;
+  padding:40px 15px;
+}
+
+.hero h1{
+  font-size:24px;
+}
+
+/* SECTION */
+.section-title{
+  font-size:20px;
+  padding:15px;
+  font-weight:bold;
+}
+
+/* BRANDS */
+.brands{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
+  gap:10px;
+  padding:10px 15px;
+}
+
+.brand{
+  background:white;
+  padding:10px;
+  border-radius:10px;
+  text-align:center;
+  font-weight:bold;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* PRODUCTS */
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+  padding:15px;
+}
+
+.card{
+  background:white;
+  padding:10px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+.price{
+  color:#e53935;
+  font-weight:bold;
+}
+
+button{
+  background:#0d47a1;
+  color:white;
+  border:none;
+  padding:7px 12px;
+  border-radius:6px;
+  margin-top:6px;
+}
+
+/* SERVICES */
+.services{
+  background:#fff3e0;
+  margin:15px;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+📱 Sapna Mobiles
+Cart: <span id="count">0</span>
+</nav>
+
+<div class="hero">
+<h1>Buy & Sell Second Hand Phones 🔥</h1>
+<p>Best Price | Warranty | Exchange Available</p>
+</div>
+
+
+<!-- BRANDS -->
+<div class="section-title">Available Brands</div>
+
+<div class="brands">
+<div class="brand">Apple</div>
+<div class="brand">Samsung</div>
+<div class="brand">MI</div>
+<div class="brand">Vivo</div>
+<div class="brand">Oppo</div>
+<div class="brand">Realme</div>
+</div>
+
+
+<!-- USED PHONES -->
+<div class="section-title">Best Deals Today</div>
+
+<div class="products">
+
+<div class="card">
+<h3>iPhone 12 (Used)</h3>
+<p class="price">₹22,999</p>
+<button onclick="add()">Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>Samsung S21 (Used)</h3>
+<p class="price">₹18,999</p>
+<button onclick="add()">Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>Redmi Note 11 (Used)</h3>
+<p class="price">₹7,499</p>
+<button onclick="add()">Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>Vivo V23 (Used)</h3>
+<p class="price">₹9,999</p>
+<button onclick="add()">Add to Cart</button>
+</div>
+
+</div>
+
+
+<!-- SERVICES -->
+<div class="services">
+✅ Phone Exchange Available <br>
+✅ Old Phone Sell Here <br>
+✅ Repair & Accessories Available
+</div>
+
+
+<div style="text-align:center;margin:15px;">
+<a href="https://wa.me/91XXXXXXXXXX">
+<button style="background:green;">Chat on WhatsApp</button>
+</a>
+</div>
+
+<footer>
+Sapna Mobiles <br>
+Garud Complex, Sakri Road, Dhule – 424001
+</footer>
+
+<script>
+let c=0;
+function add(){
+  c++;
+  document.getElementById("count").innerText=c;
+}
+</script>
+
+</body>
+</html>
